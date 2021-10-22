@@ -1,8 +1,7 @@
 const rules = require('./validationRules');
-const { logger, newLogger} = require('./logger');
+const { logger } = require('./logger');
 
 module.exports = {
   rules,
   logger,
-  newLogger
 };

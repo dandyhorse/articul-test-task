@@ -10,9 +10,7 @@ const userUpdateRules = {
   age: 'integer',
 };
 
-
-
 module.exports = {
   userCreateRules,
-  userUpdateRules
+  userUpdateRules,
 };
