@@ -1,0 +1,36 @@
+{
+  "useTabs": false,
+  "printWidth": 100,
+  "tabWidth": 2,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "jsxBracketSameLine": false,
+  "semi": true,
+  "overrides": [
+    {
+      "files": ["*.js", "*.jsx", ".ts"],
+      "options": {
+        "parser": "babel-flow",
+        "arrowParens": "always"
+      }
+    },
+    {
+      "files": ["*.json", "*rc"],
+      "options": {
+        "parser": "json"
+      }
+    },
+    {
+      "files": ["*.html"],
+      "options": {
+        "parser": "html"
+      }
+    },
+    {
+      "files": ["*.yaml", "*.yml"],
+      "options": {
+        "parser": "yaml"
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+    "parser": "babel-eslint",
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "env": {
+      "commonjs": true,
+      "es6": true,
+      "node": true,
+      "browser": false
+    },
+    "parserOptions": {
+      "ecmaFeatures": {
+        "experimentalObjectRestSpread": true,
+        "jsx": false
+      },
+      "sourceType": "module"
+    },
+    "globals": {
+      "strapi": true,
+      "fetch": true
+    },
+    "rules": {
+      "indent": ["error", 2, { "SwitchCase": 1 }],
+      "linebreak-style": ["error", "unix"],
+      "no-console": ["error", { "allow": ["warn", "error"] }],
+      "quotes": ["error", "single"],
+      "semi": ["error", "always"],
+      "eqeqeq": ["error", "always", { "null": "ignore" }],
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    }
+  }
+  
