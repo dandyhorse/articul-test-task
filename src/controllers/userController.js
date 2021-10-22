@@ -50,7 +50,7 @@ async function updateUserById(req, res) {
   try {
     const userId = parseInt(req.params.id);
 
-    // Potential non-secure endpoint, if user not exist and we return 'Email mus be unique' before that:
+    // Potential non-secure endpoint, if user not exist and we return 'Email must be unique' before that:
     await isExistUser(userId);
 
     const requestData = req.body;

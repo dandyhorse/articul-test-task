@@ -1,7 +1,7 @@
 {
   "name": "ArticulTestTask",
   "version": "1.0.0",
-  "description": "",
+  "description": "Articul Test Task: user CRUD and API",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/app.js"
