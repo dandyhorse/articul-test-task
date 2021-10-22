@@ -12,7 +12,7 @@ function logger(req, res, next) {
 
     fs.appendFile('logs.txt', log, { flag: 'a+' }, (err) => {
       if (err) {
-        console.log(err);
+        console.error(err);
       }
     });
   });
