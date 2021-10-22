@@ -5,14 +5,18 @@ const router = express.Router();
 const bodyParser = require('body-parser');
 const jsonParser = bodyParser.json();
 const { userController } = require('../controllers');
-const { newLogger } = require('../utils');
+const { logger } = require('../utils');
 
-router.use([jsonParser]);
+router.use([jsonParser, logger]);
 
-router.post('/createUser', userController.createUser);
+router.get(userController.getUserList);
 
-// router.post('/signin', userController.signIn);
+router.get('/:id(\\d+)', userController.getUserById);
 
-// router.get('/:id(\\d+)', [verifyJWT], userController.getUserDetail);
+router.post(userController.createUser);
+
+router.put('/:id(\\d+)', userController.updateUserById);
+
+router.delete('/:id(\\d+)', userController.deleteUserById);
 
 module.exports = router;

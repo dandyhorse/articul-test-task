@@ -5,7 +5,7 @@ const { userRouter } = require('./routes');
 const { serverConfig } = require('./config/config');
 const app = express();
 
-app.use('/user', userRouter);
+app.use('/users/', userRouter);
 
 app.listen(serverConfig);
 

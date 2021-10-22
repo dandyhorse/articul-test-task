@@ -17,7 +17,7 @@ const SQLConfig = {
   username: POSTGRES_USER,
   password: POSTGRES_PASSWORD,
   database: POSTGRES_DB,
-  host: 'localhost',
+  host: POSTGRES_HOST,
   port: parseInt(POSTGRES_PORT),
   dialect: 'postgres',
 };
